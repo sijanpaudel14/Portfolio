@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
 /********** Template CSS **********/
 :root {
     --primary: #6244C5;
@@ -15,6 +17,8 @@
 }
 
 * {
+
+    font-family: 'Poppins';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,8 +28,13 @@
     transition: .2s linear;
 }
 
-html {
-    font-size: 100%;
+/* html {
+    font-size: 1%;
+
+} */
+
+body {
+    background: var(--bg-color);
 }
 
 .back-to-top {
@@ -236,6 +245,11 @@ html {
     opacity: 1;
 }
 
+.box {
+    box-shadow: var(--box-shadow);
+    border-radius: 1.5rem;
+    padding: 1rem;
+}
 
 /*** About ***/
 #about .years .display-1 {
@@ -465,6 +479,8 @@ html {
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
     padding: 10px;
+    width: 27rem;
+
 }
 
 .share a {
@@ -473,7 +489,7 @@ html {
     line-height: 3.5rem;
     box-shadow: var(--box-shadow);
     margin: .5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--black);
     border-radius: .5rem;
 }
@@ -489,3 +505,41 @@ html {
     justify-content: center;
 
 }
+
+#contact .box {
+    padding: 2rem;
+}
+
+#contact .form-control {
+    box-shadow: var(--box-shadow);
+    background: none;
+    border: none;
+
+}
+
+#contact form .form-control:focus {
+    box-shadow: var(--box-shadow-inset);
+    border: none;
+}
+
+.g-3 {
+    padding-top: 1rem;
+}
+
+/* 
+#service .wow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--green);
+    z-index: -1;
+    clip-path: circle(9rem at 5% 0%);
+    transition: .3s linear;
+}
+
+#service {
+    background: var(--bg-color);
+} */
