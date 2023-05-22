@@ -543,3 +543,16 @@ body {
 #service {
     background: var(--bg-color);
 } */
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .header {
+        width: 100%;
+        border-right: 0;
+    }
+
+}
