@@ -525,3 +525,11 @@ body {
 .g-3 {
     padding-top: 1rem;
 }
+
+@media (max-width:1200px) {
+
+    #contact .fw-bold {
+        font-size: 23px;
+
+    }
+}
